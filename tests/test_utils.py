@@ -234,6 +234,7 @@ class TestCache(object):
         assert shelve == {key: {'etag': '0', 'value': 'test'}}
 
 
+@pytest.mark.usefixtures('no_memoize')
 class TestGetValidHistoryWithoutCurrent(object):
     @pytest.fixture(autouse=True)
     def fail_on_warning(self):
@@ -258,9 +259,10 @@ class TestGetValidHistoryWithoutCurrent(object):
     @pytest.fixture(autouse=True)
     def bins(self, mocker):
         callables = list()
-        for name in ['diff', 'ls', 'café']:
-            bin_mock = mocker.Mock(name=name)
-            bin_mock.configure_mock(name=name, is_dir=lambda: False)
+        for name in ['diff', 'ls', u'café']:
+            bin_mock = mocker.Mock()
+            bin_mock.name = name
+            bin_mock.is_dir.return_value = False
             callables.append(bin_mock)
         path_mock = mocker.Mock(iterdir=mocker.Mock(return_value=callables))
         return mocker.patch('thefuck.utils.Path', return_value=path_mock)

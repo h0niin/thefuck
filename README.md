@@ -106,13 +106,23 @@ Reading package lists... Done
 
 ## Requirements
 
-- python (3.5+)
+- python (3.8+, Python 3.13 supported)
 - pip
 - python-dev
 
 ##### [Back to Contents](#contents)
 
 ## Installation
+
+### Install directly from this repository (updated):
+
+```bash
+pip install git+https://github.com/h0niin/thefuck.git@fix/deps-modernization
+# or using pipx
+pipx install git+https://github.com/h0niin/thefuck.git@fix/deps-modernization
+```
+
+### Other Package Managers (outdated):
 
 On macOS or Linux, you can install *The Fuck* via [Homebrew][homebrew]:
 

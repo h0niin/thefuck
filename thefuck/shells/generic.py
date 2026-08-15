@@ -56,7 +56,7 @@ class Generic(object):
     def _get_history_lines(self):
         """Returns list of history entries."""
         history_file_name = self._get_history_file_name()
-        if os.path.isfile(history_file_name):
+        if history_file_name and os.path.isfile(history_file_name):
             with io.open(history_file_name, 'r',
                          encoding='utf-8', errors='ignore') as history_file:
 

@@ -297,12 +297,13 @@ cache.disabled = False
 def get_installation_version():
     try:
         from importlib.metadata import version
-
         return version('thefuck')
-    except ImportError:
-        import pkg_resources
-
-        return pkg_resources.require('thefuck')[0].version
+    except Exception:
+        try:
+            import pkg_resources
+            return pkg_resources.require('thefuck')[0].version
+        except Exception:
+            return 'unknown'
 
 
 def get_alias():
