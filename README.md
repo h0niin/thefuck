@@ -117,9 +117,9 @@ Reading package lists... Done
 ### Install directly from this repository (updated):
 
 ```bash
-pip install git+https://github.com/h0niin/thefuck.git@fix/deps-modernization
+pip install git+https://github.com/h0niin/thefuck.git
 # or using pipx
-pipx install git+https://github.com/h0niin/thefuck.git@fix/deps-modernization
+pipx install git+https://github.com/h0niin/thefuck.git
 ```
 
 ### Other Package Managers (outdated):
