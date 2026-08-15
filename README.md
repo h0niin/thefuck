@@ -1,6 +1,6 @@
 # The Fuck [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
-> 🙌 **Thsi Fork:** support for **Python 3.13+** and updated dependencies.
+> ⚡ **Thsi Fork:** support for **Python 3.13+** and updated dependencies and `pytest 9` compatible. **SEE UPDATED [INSTALLATION](#install-directly-from-this-repository-updated) FOR INSTRUCTIONS.**
 
 *The Fuck* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
 [tweet](https://twitter.com/liamosaur/status/506975850596536320),
