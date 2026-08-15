@@ -118,10 +118,21 @@ Reading package lists... Done
 
 ### Install directly from this repository (updated):
 
+Via `pipx` (recommended on Python 3.12+ & modern OSes):
+```bash
+pipx install git+https://github.com/h0niin/thefuck.git
+```
+
+Or via `pip` from GitHub:
 ```bash
 pip install git+https://github.com/h0niin/thefuck.git
-# or using pipx
-pipx install git+https://github.com/h0niin/thefuck.git
+```
+
+Or from local cloned repository:
+```bash
+pip install .
+# or for local development:
+pip install -e .
 ```
 
 ### Other Package Managers (outdated):
