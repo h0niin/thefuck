@@ -1,5 +1,7 @@
 # The Fuck [![Version][version-badge]][version-link] [![Build Status][workflow-badge]][workflow-link] [![Coverage][coverage-badge]][coverage-link] [![MIT License][license-badge]](LICENSE.md)
 
+> 🙌 **Thsi Fork:** support for **Python 3.13+** and updated dependencies.
+
 *The Fuck* is a magnificent app, inspired by a [@liamosaur](https://twitter.com/liamosaur/)
 [tweet](https://twitter.com/liamosaur/status/506975850596536320),
 that corrects errors in previous console commands.
@@ -572,5 +574,3 @@ Project License can be found [here](LICENSE.md).
 [examples-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example.gif
 [instant-mode-gif-link]:   https://raw.githubusercontent.com/nvbn/thefuck/master/example_instant_mode.gif
 [homebrew]:        https://brew.sh/
-
-##### [Back to Contents](#contents)
